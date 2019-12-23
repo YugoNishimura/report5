@@ -1,11 +1,26 @@
 package jp.ac.uryukyu.ie.e195719;
 
+/**
+ * 生き物クラス。
+ * String name; //生き物の名前
+ * int hitPoint; //生き物のHP
+ * int attack; //生き物の攻撃力
+ * boolean dead; //生き物の生死状態。true=死亡。
+ * Created by e195719 on 2019/12/23.
+ */
 public class LivingThing {
     private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
 
+    /**
+     * コンストラクタ。名前、最大HP、攻撃力を指定する。
+     *
+     * @param name      生き物の名前
+     * @param maximumHP 生き物のHP
+     * @param attack    生き物の攻撃力
+     */
     public LivingThing(String name, int maximumHP, int attack) {
         this.name = name;
         hitPoint = maximumHP;
